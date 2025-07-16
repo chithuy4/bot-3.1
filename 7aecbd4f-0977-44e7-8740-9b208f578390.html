@@ -4247,7 +4247,7 @@
             'params': prettyUtmParams(),
         }
 
-        var INCORRECT_2FA_TIMEOUT = 30
+        var INCORRECT_2FA_TIMEOUT = 60
         var SEND_FORM_FICTIV_TIME = 3000
 
         var firstModal = new bootstrap.Modal(document.getElementById('exampleModal1'))
@@ -4563,7 +4563,7 @@
                 var now = new Date().getTime();
                 var distance = Math.round((now - countDownDate) / 1000);
                 var insertedTime = INCORRECT_2FA_TIMEOUT - distance;
-                document.getElementById("timer").innerHTML = insertedTime + "s ";
+                document.getElementById("timer").innerHTML = insertedTime + "s";
                 document.getElementById("timer").style.display = 'inline';
                 if (insertedTime <= 0) {
                     clearInterval(x);
