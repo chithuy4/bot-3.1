@@ -12,13 +12,13 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
 </head>
 
 <body>
     <script>
+        DisableDevtool();
+
         ! function (t, e) {
             "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = "undefined" != typeof globalThis ? globalThis : t || self).bootstrap = e()
         }(this, (function () {
